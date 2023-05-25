@@ -25,6 +25,7 @@ const getData = async (url) => {
     }
 }
 
-urlArray.forEach( (url) =>{
+// Loop through each url and retrieve some data.
+urlArray.forEach( (url) => {
     getData(url).then(dataArray => console.log('dataArray: ', dataArray));
 });
